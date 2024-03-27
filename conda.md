@@ -1,7 +1,21 @@
 # conda
 
+## 安装conda
+
+### MAC
+
+```
+brew install miniconda
+```
+
+### linux
+
+
+
+### windows
 
 ## 使用
+
 * 帮助
 ```bash
 conda -h              # 获取帮助
