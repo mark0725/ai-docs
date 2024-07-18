@@ -57,6 +57,8 @@ sudo apt install docker.io docker-compose
 docker -v
 ```
 
+> 设置docker代理
+
 ### 禁用默认驱动
 
 * 查看默认驱动

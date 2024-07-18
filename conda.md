@@ -51,3 +51,4 @@ conda remove -n xxxx --all      # 删除xxxx虚拟环境
 conda clean -p              # 删除没有用的包,清理缓存
 conda clean -t            # 删除tar安装包
 ```
+
