@@ -20,12 +20,14 @@
 
 ## 算力
 
+**运行AI模型最好能够使用GPU算力，稍微大一点的模型CPU基本跑不动。**
+
 * Aliyun
 * Huaweicloud： [Modelarts](https://console.huaweicloud.com/modelarts/?region=cn-north-4#/dashboard)提供免费GPU学习环境，但是gpu比较老，适合简单基础学习。长时间运行模型最好购买GPU服务器。
 * AWS
 * Azure
-* AutoDL: [官网](https://www.autodl.com/home)
-* 算力互联: [官网](https://www.casdao.com/)
+* AutoDL: 价格便宜[官网](https://www.autodl.com/home)
+* 算力互联: 价格便宜，卡多[官网](https://www.casdao.com/)
 * colab
 * PC
 
@@ -79,7 +81,6 @@
 ### 框架
 
 * pytorch: Tensors and Dynamic neural networks in Python with strong GPU acceleration. [官网](https://pytorch.org/)|[github](https://github.com/pytorch/pytorch)
-
 * jax: Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more[官网](http://jax.readthedocs.io/)|[github](https://github.com/google/jax)
 * tensorflow: [官网]()
 * candle：Minimalist ML framework for Rust [github](https://github.com/huggingface/candle)
@@ -134,6 +135,8 @@
 ## 待解决问题
 
 * [ ] 模型任务调度平台, 模型或算力是稀有资源，如何给多个应用及用户合理分配资源，同时保证用户体验。关键指标：分区隔离、限流、降级、动态平衡、多任务、集群、可观察、多模型供应商。
+* [ ] 多个云的算力资源混合管理和调度。
+* [ ] 多个云之间数据资源共享同步。
 
 ## 其他
 
