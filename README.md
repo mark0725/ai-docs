@@ -4,13 +4,17 @@
 
 由于需要在多个按量计费的云环境中动态使用GPU服务器（不用的时候停止，以节省费用），希望能构建一个可以在多个AI服务器上快速切换的conda环境，多个服务器共享conda环境和用户工作内容，可以任意启动多个实例，docker容器停止后用户或应用工作成果不丢失，切换到其他主机后可以继续工作。
 
-* 使用NAS实现多主机文件共享
+* NAS服务：使用NAS实现多主机文件共享
 
-构建三个基础容器镜像：
+* GPU服务器: 阿里云V100GPU服务器环境安装，[Ubuntu 22.04.1 LTS上安装cuda环境](./cuda.md)
 
-1. [cuda](): 安装宿主机驱动，安装和验证cuda docker运行环境
-2. [conda](): 基于cuda环境构建公共conda环境
-3. [jupyterlab](): 基于conda环境构建一个公共的jupyterlab, ai 试验环境。
+* docker环境: 安装GPU Docker容器环境[Installing the NVIDIA Container Toolkit](./cuda.md)
+
+* 构建三个基础容器镜像：
+  1. [cuda](): 安装和验证cuda docker运行环境
+  2. [conda](): 基于容器cuda环境构建公共conda环境
+  3. [jupyterlab](): 基于conda环境构建一个公共的jupyterlab, ai 试验环境。
+
 
 > 后续所有试验内容基于本环境进行
 
@@ -25,7 +29,6 @@
 ## 基础
 
 * python:
-* conda:
 * numpy:
 * jupyterlab: JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. [官网](https://jupyter.org/)
 * opencv2:
@@ -36,8 +39,9 @@
   * qwen2:[github](https://github.com/QwenLM/Qwen2):
   * chatglm
   * llama3
-  * clip
-
+  * code-llama:  [提示词](https://www.promptingguide.ai/models/code-llama)
+  * clip: Predict the most relevant text snippet given an image.[github](https://github.com/openai/CLIP)
+  
 * video
   * echomimic: [github](https://github.com/BadToBest/EchoMimic)|[笔记]()
 
@@ -69,7 +73,7 @@
 ## 训练
 
 * wandb: The AI developer platform,Train and fine-tune models, manage models from experimentation to production, and track and evaluate LLM applications.[官网](https://wandb.ai/)
-* DeepSpeed: DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.[github](https://github.com/microsoft/DeepSpeed)
+* DeepSpeed: DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.[github](https://github.com/microsoft/DeepSpeed)|[官网](https://www.deepspeed.ai/)
 
 ## 模型优化
 
@@ -79,10 +83,10 @@
 ## 运行部署
 
 * accelerate: A simple way to launch, train, and use PyTorch models on almost any device and distributed configuration[github](https://github.com/huggingface/accelerate)
-* ollama: Get up and running with large language models.[github](https://github.com/ollama/ollama)|[ollama模型库](https://ollama.com/library)|[笔记](./ollama.md)
+* ollama: Get up and running with large language models.[github](https://github.com/ollama/ollama)|[官网](https://ollama.com/)|[docker](https://hub.docker.com/r/ollama/ollama)|[ollama模型库](https://ollama.com/library)|[笔记](./ollama.md)
 * huggingface: The platform where the machine learning community collaborates on models, datasets, and applications. **AI model's github**[官网](https://huggingface.co/)
 * vLLM:OpenAI-compatible API server. [github](https://github.com/vllm-project/vllm)|[文档](https://docs.vllm.ai/)
-* Triton
+* Triton: [文档](https://www.nvidia.cn/gpu-cloud/ngc-nvidia-triton/)
 
 ## 应用
 
@@ -109,6 +113,7 @@
 ## 其他
 
 * 向量数据库
+  * faiss: [github](https://github.com/facebookresearch/faiss)
   * Qdrant
   * Chroma
 * FastAPI
