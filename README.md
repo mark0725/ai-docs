@@ -55,9 +55,11 @@
   * SadTalker: [github](https://sadtalker.github.io)
   * Wav2Lip: [github](https://github.com/Rudrabha/Wav2Lip)
   * ER-NeRF: [github](https://github.com/Fictionarry/ER-NeRF)
-* aigc
+* 多模态
   * Stable Diffusion
 
+  * Kolors: 快手可图,文生图大模型.[github](https://github.com/Kwai-Kolors/Kolors)|[modelscope](https://www.modelscope.cn/models/Kwai-Kolors/Kolors)
+  
 * video
   * 
 
@@ -66,6 +68,7 @@
   * Whisper: Whisper is a general-purpose speech recognition model. [github](https://github.com/openai/whisper)
   * GPT-SoVITS: 低成本AI音色克隆软件。目前只有TTS（文字转语音）功能，将来会更新变声功能[github](https://github.com/RVC-Boss/GPT-SoVITS)|[文档](https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e)
   * Coqui XTTS: Coqui XTTS是一个领先的深度学习文本到语音任务（TTS语音生成模型）工具包，通过使用一段5秒钟以上的语音频剪辑就可以完成声音克隆*将语音克隆到不同的语言*。 [github](https://github.com/coqui-ai/TTS)|[huggingface](https://huggingface.co/spaces/coqui/xtts)
+  * CosyVoice-300M: [modelscope](https://www.modelscope.cn/models/speech_tts/CosyVoice-300M/summary)
 * cv
   * SAM: [github](https://github.com/facebookresearch/segment-anything)
 * ocr
@@ -110,6 +113,7 @@
 * accelerate: A simple way to launch, train, and use PyTorch models on almost any device and distributed configuration[github](https://github.com/huggingface/accelerate)
 * ollama: Get up and running with large language models.[github](https://github.com/ollama/ollama)|[官网](https://ollama.com/)|[docker](https://hub.docker.com/r/ollama/ollama)|[ollama模型库](https://ollama.com/library)|[笔记](./ollama.md)
 * huggingface: The platform where the machine learning community collaborates on models, datasets, and applications. **AI model's github**[官网](https://huggingface.co/)
+* 魔塔： 类似huggingface, [官网](www.modelscope.cn)
 * vLLM:OpenAI-compatible API server. [github](https://github.com/vllm-project/vllm)|[文档](https://docs.vllm.ai/)
 * Triton: [文档](https://www.nvidia.cn/gpu-cloud/ngc-nvidia-triton/)
 
