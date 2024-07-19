@@ -35,11 +35,13 @@
 
 ## 模型
 
+### 开源模型
+
 * llm(NLP)
-  * qwen2:[github](https://github.com/QwenLM/Qwen2):
-  * chatglm
-  * llama3
-  * code-llama:  [提示词](https://www.promptingguide.ai/models/code-llama)
+  * qwen2: [github](https://github.com/QwenLM/Qwen2)
+  * GLM-4: [github](https://github.com/THUDM/GLM-4)
+  * llama3: [github](https://github.com/meta-llama/llama3)
+  * code-llama:  [github](https://github.com/meta-llama/codellama)|[提示词](https://www.promptingguide.ai/models/code-llama)
   * clip: Predict the most relevant text snippet given an image.[github](https://github.com/openai/CLIP)
   
 * video
@@ -55,28 +57,29 @@
   * PaddleOCR: [github](https://github.com/PaddlePaddle/PaddleOCR)
   * tesseract-ocr: [github](https://github.com/tesseract-ocr/tesseract)
 
-
-## 试验
+### 试验
 
 * transformer
 * cnn
 * vae
 * unet
 
-## 框架
+### 框架
 
 * pytorch: Tensors and Dynamic neural networks in Python with strong GPU acceleration. [官网](https://pytorch.org/)|[github](https://github.com/pytorch/pytorch)
 
 * jax: Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more[官网](http://jax.readthedocs.io/)|[github](https://github.com/google/jax)
 * tensorflow: [官网]()
+* candle：Minimalist ML framework for Rust [github](https://github.com/huggingface/candle)
 
-## 训练
+### 训练工具
 
 * wandb: The AI developer platform,Train and fine-tune models, manage models from experimentation to production, and track and evaluate LLM applications.[官网](https://wandb.ai/)
 * DeepSpeed: DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.[github](https://github.com/microsoft/DeepSpeed)|[官网](https://www.deepspeed.ai/)
 
-## 模型优化
+### 模型训练
 
+* 预训练
 * 微调
 * 知识蒸馏
 
@@ -97,6 +100,7 @@
 * 数字人
 * 提示词: [Prompt Engineering Guide](https://www.promptingguide.ai/)
 * AI-Gateway
+* LlamaIndex: LlamaIndex is a data framework for your LLM applications. [github](https://github.com/run-llama/llama_index)
 
 ## 工具
 
@@ -114,9 +118,12 @@
 
 * 向量数据库
   * faiss: [github](https://github.com/facebookresearch/faiss)
-  * Qdrant
-  * Chroma
+  * Qdrant: [github](https://github.com/qdrant/qdrant)
+  * Chroma: [github](https://github.com/chroma-core/chroma)
 * FastAPI
+* nvtop: GPU & Accelerator process monitoring for AMD, Apple, Huawei, Intel, NVIDIA and Qualcomm. [github](https://github.com/Syllo/nvtop?tab=readme-ov-file)
+* nvitop: An interactive NVIDIA-GPU process viewer and beyond, the one-stop solution for GPU process management.[github](https://github.com/XuehaiPan/nvitop)|[doc](https://github.com/XuehaiPan/nvitop)
+* Tokenizers: Fast State-of-the-Art Tokenizers optimized for Research and Production.[github](https://github.com/huggingface/tokenizers)|[文档](https://huggingface.co/docs/tokenizers)
 * ffmpeg
 * SRS:SRS is a simple, high-efficiency, real-time video server supporting RTMP, WebRTC, HLS, HTTP-FLV, SRT, MPEG-DASH, and GB28181.[github](https://github.com/ossrs/srs)
 * NAS: 实现多服务器文件共享，可以使用云厂商NAS服务或自己搭建NFS Server[阿里云搭建NAS笔记](./nas.md)
