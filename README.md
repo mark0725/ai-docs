@@ -24,6 +24,9 @@
 * Huaweicloud： [Modelarts](https://console.huaweicloud.com/modelarts/?region=cn-north-4#/dashboard)提供免费GPU学习环境，但是gpu比较老，适合简单基础学习。长时间运行模型最好购买GPU服务器。
 * AWS
 * Azure
+* AutoDL: [官网](https://www.autodl.com/home)
+* 算力互联: [官网](https://www.casdao.com/)
+* colab
 * PC
 
 ## 基础
@@ -43,17 +46,22 @@
   * llama3: [github](https://github.com/meta-llama/llama3)
   * code-llama:  [github](https://github.com/meta-llama/codellama)|[提示词](https://www.promptingguide.ai/models/code-llama)
   * clip: Predict the most relevant text snippet given an image.[github](https://github.com/openai/CLIP)
-  
-* video
+* avatar-(数字人)
   * echomimic: [github](https://github.com/BadToBest/EchoMimic)|[官网](https://badtobest.github.io/echomimic.html)|[笔记]()
+  * SadTalker: [github](https://sadtalker.github.io)
+  * Wav2Lip: [github](https://github.com/Rudrabha/Wav2Lip)
+  * ER-NeRF: [github](https://github.com/Fictionarry/ER-NeRF)
+* video
+  * 
 
 * audio
   * funasr: 阿里的`FunASR`的语音识别效果也是相当不错，而且时间也是比whisper更快的.[github](https://github.com/modelscope/FunASR)
   * Whisper: Whisper is a general-purpose speech recognition model. [github](https://github.com/openai/whisper)
+  * GPT-SoVITS: 低成本AI音色克隆软件。目前只有TTS（文字转语音）功能，将来会更新变声功能[github](https://github.com/RVC-Boss/GPT-SoVITS)|[文档](https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e)
   * Coqui XTTS: Coqui XTTS是一个领先的深度学习文本到语音任务（TTS语音生成模型）工具包，通过使用一段5秒钟以上的语音频剪辑就可以完成声音克隆*将语音克隆到不同的语言*。 [github](https://github.com/coqui-ai/TTS)|[huggingface](https://huggingface.co/spaces/coqui/xtts)
-
 * cv
   * SAM: [github](https://github.com/facebookresearch/segment-anything)
+* ocr
   * PaddleOCR: [github](https://github.com/PaddlePaddle/PaddleOCR)
   * tesseract-ocr: [github](https://github.com/tesseract-ocr/tesseract)
 
