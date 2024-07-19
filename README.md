@@ -5,6 +5,7 @@
 * numpy:
 * python:
 * jupyterlab:JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. [官网](https://jupyter.org/)
+* opencv2
 
 ## 算力
 
@@ -39,17 +40,29 @@
 
   * llama3
 
+  * clip
+
 * video
-  * echomimic: [github](https://github.com/BadToBest/EchoMimic):
+  * echomimic: [github](https://github.com/BadToBest/EchoMimic)|[笔记]()
 
 * audio
-  * funasr
-  * Whisper: [github](https://github.com/openai/whisper)
-  * Coqui XTTS
+  * funasr: 阿里的`FunASR`的语音识别效果也是相当不错，而且时间也是比whisper更快的
+  * Whisper: Whisper is a general-purpose speech recognition model. [github](https://github.com/openai/whisper)
+  * Coqui XTTS: Coqui XTTS是一个领先的深度学习文本到语音任务（TTS语音生成模型）工具包，通过使用一段5秒钟以上的语音频剪辑就可以完成声音克隆*将语音克隆到不同的语言*。 [github](https://github.com/coqui-ai/TTS)|[huggingface](https://huggingface.co/spaces/coqui/xtts)
 
 * cv
-  * SAM
+  * SAM: [github](https://github.com/facebookresearch/segment-anything)
+  * PaddleOCR: [github](https://github.com/PaddlePaddle/PaddleOCR)
+  * tesseract-ocr: [github](https://github.com/tesseract-ocr/tesseract)
 
+
+## 试验
+
+* transformer
+* cnn
+* vae
+* unet
+* 
 
 ## 框架
 
@@ -60,8 +73,8 @@
 
 ## 训练
 
-* wandb
-* deepspeed
+* wandb: The AI developer platform,Train and fine-tune models, manage models from experimentation to production, and track and evaluate LLM applications.[官网](https://wandb.ai/)
+* DeepSpeed: DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.[github](https://github.com/microsoft/DeepSpeed)
 
 ## 模型优化
 
@@ -70,24 +83,29 @@
 
 ## 运行部署
 
-* accelerate
-* ollama: Get up and running with large language models.[github](https://github.com/ollama/ollama)|[ollama模型库](https://ollama.com/library)
+* accelerate: A simple way to launch, train, and use PyTorch models on almost any device and distributed configuration[github](https://github.com/huggingface/accelerate)
+* ollama: Get up and running with large language models.[github](https://github.com/ollama/ollama)|[ollama模型库](https://ollama.com/library)|[笔记](./ollama.md)
 * huggingface: The platform where the machine learning community collaborates on models, datasets, and applications. **AI model's github**[官网](https://huggingface.co/)
 * vLLM:OpenAI-compatible API server. [github](https://github.com/vllm-project/vllm)|[文档](https://docs.vllm.ai/)
+* Triton
 
 ## 应用
 
 * AI-Gateway
 * RAG
 * langchain: Applications that can reason. Powered by LangChain.[官网](https://www.langchain.com/)|[github](https://github.com/langchain-ai)
-* Dify
+* Dify: [github](https://github.com/langgenius/dify)|[官网](https://dify.ai/)
+*  ComfyUI
 * 数字人
 * 提示词: [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
 ## 工具
 
 * 数据标注
-  * 
+  * jTessBoxEditor:  [jTessBoxEditor](https://vietocr.sourceforge.net/training.html)is a box editor and trainer for [Tesseract OCR](https://github.com/tesseract-ocr)
+
+* WebUI
+  * gradio: Gradio是一个Python库,提供了一种简单的方式将机器学习模型作为交互式Web应用程序来部署。
 
 
 ## 待解决问题
@@ -101,3 +119,5 @@
 * 向量数据库
   * Qdrant
 * FastAPI
+* ffmpeg
+* SRS
