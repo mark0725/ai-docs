@@ -4,11 +4,11 @@
 
 由于需要在多个按量计费的云环境中动态使用GPU服务器（不用的时候停止，以节省费用），希望能构建一个可以在多个AI服务器上快速切换的conda环境，多个服务器共享conda环境和用户工作内容，可以任意启动多个实例，docker容器停止后用户或应用工作成果不丢失，切换到其他主机后可以继续工作。
 
-* NAS服务：使用NAS实现多主机文件共享
+* NAS服务：使用NAS实现多主机文件共享. [NFS挂载](./infra/nas.md)
 
-* GPU服务器: 阿里云V100GPU服务器环境安装，[Ubuntu 22.04.1 LTS上安装cuda环境](./cuda.md)
+* GPU服务器: 阿里云V100GPU服务器环境安装.[Ubuntu 22.04.1 LTS上安装cuda环境](./cuda.md)
 
-* docker环境: 安装GPU Docker容器环境[NVIDIA Docker工具包安装官方文档](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)|[验证环境官方文档](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/docker-specialized.html)|[安装笔记](./cuda.md)
+* docker环境: 安装GPU Docker容器环境.[NVIDIA Docker工具包安装官方文档](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)|[验证环境官方文档](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/docker-specialized.html)|[安装笔记](./cuda.md)
 
 * 构建三个基础容器镜像：
   1. [cuda](): 安装和验证cuda docker运行环境
@@ -45,7 +45,7 @@
   * clip: Predict the most relevant text snippet given an image.[github](https://github.com/openai/CLIP)
   
 * video
-  * echomimic: [github](https://github.com/BadToBest/EchoMimic)|[笔记]()
+  * echomimic: [github](https://github.com/BadToBest/EchoMimic)|[官网](https://badtobest.github.io/echomimic.html)|[笔记]()
 
 * audio
   * funasr: 阿里的`FunASR`的语音识别效果也是相当不错，而且时间也是比whisper更快的.[github](https://github.com/modelscope/FunASR)
@@ -83,6 +83,10 @@
 * 微调
 * 知识蒸馏
 
+### 数据集
+
+* PASCAL VOC: Visual Object Classes [官网](http://host.robots.ox.ac.uk/pascal/VOC/)
+
 ## 运行部署
 
 * accelerate: A simple way to launch, train, and use PyTorch models on almost any device and distributed configuration[github](https://github.com/huggingface/accelerate)
@@ -106,13 +110,18 @@
 
 * 数据标注
   * jTessBoxEditor:  [jTessBoxEditor](https://vietocr.sourceforge.net/training.html)is a box editor and trainer for [Tesseract OCR](https://github.com/tesseract-ocr)
+  * labelme: 
+  * AnyLabeling: 是一款自动标注工具
+  * 精灵标注: 图片标注[官网](http://www.jinglingbiaozhu.com/)
+  * CVAT:  is an interactive video and image annotation tool for computer vision.[官网](https://app.cvat.ai/)
+  * makesense： Free to use online tool for labelling photos. [github](https://github.com/SkalskiP/make-sense)|[官网](https://www.makesense.ai/)
 * WebUI
   * gradio: Gradio是一个Python库,提供了一种简单的方式将机器学习模型作为交互式Web应用程序来部署。
   * Open WebUI: User-friendly WebUI for LLMs [github](https://github.com/open-webui/open-webui)
 
 ## 待解决问题
 
-* [ ] 模型任务调度平台, 模型或算力是稀有资源，如何在多个应用及用户合理分配资源，同时保证用户体验。
+* [ ] 模型任务调度平台, 模型或算力是稀有资源，如何给多个应用及用户合理分配资源，同时保证用户体验。关键指标：分区隔离、限流、降级、动态平衡、多任务、集群、可观察、多模型供应商。
 
 ## 其他
 
