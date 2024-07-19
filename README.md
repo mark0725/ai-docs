@@ -17,7 +17,7 @@
 
 ## 环境
 
-由于需要在多个按量计费的云环境中动态使用GPU主机（不用的时候停止，以节省费用），希望能构建一个可以在多个AI主机上快速切换的conda环境，多个主机共享conda和用户环境，可以任意启动多个实例，docker容器停止后用户或应用工作成果不丢失，切换到其他主机后可以继续工作。
+由于需要在多个按量计费的云环境中动态使用GPU服务器（不用的时候停止，以节省费用），希望能构建一个可以在多个AI服务器上快速切换的conda环境，多个服务器共享conda环境和用户工作内容，可以任意启动多个实例，docker容器停止后用户或应用工作成果不丢失，切换到其他主机后可以继续工作。
 
 * 使用NAS实现多主机文件共享
 
@@ -62,7 +62,6 @@
 * cnn
 * vae
 * unet
-* 
 
 ## 框架
 
@@ -91,13 +90,13 @@
 
 ## 应用
 
-* AI-Gateway
 * RAG
 * langchain: Applications that can reason. Powered by LangChain.[官网](https://www.langchain.com/)|[github](https://github.com/langchain-ai)
 * Dify: [github](https://github.com/langgenius/dify)|[官网](https://dify.ai/)
-*  ComfyUI
+* ComfyUI
 * 数字人
 * 提示词: [Prompt Engineering Guide](https://www.promptingguide.ai/)
+* AI-Gateway
 
 ## 工具
 
@@ -121,3 +120,4 @@
 * FastAPI
 * ffmpeg
 * SRS
+* NAS: 实现多服务器文件共享，可以使用云厂商NAS服务或自己搭建NFS Server[阿里云搭建NAS笔记](./nas.md)
