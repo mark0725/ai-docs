@@ -9,9 +9,7 @@
 构建三个基础容器镜像：
 
 1. [cuda](): 安装宿主机驱动，安装和验证cuda docker运行环境
-
 2. [conda](): 基于cuda环境构建公共conda环境
-
 3. [jupyterlab](): 基于conda环境构建一个公共的jupyterlab, ai 试验环境。
 
 > 后续所有试验内容基于本环境进行
@@ -35,11 +33,8 @@
 
 * llm(NLP)
   * qwen2:[github](https://github.com/QwenLM/Qwen2):
-
   * chatglm
-
   * llama3
-
   * clip
 
 * video
@@ -102,9 +97,9 @@
 
 * 数据标注
   * jTessBoxEditor:  [jTessBoxEditor](https://vietocr.sourceforge.net/training.html)is a box editor and trainer for [Tesseract OCR](https://github.com/tesseract-ocr)
-
 * WebUI
   * gradio: Gradio是一个Python库,提供了一种简单的方式将机器学习模型作为交互式Web应用程序来部署。
+  * Open WebUI: User-friendly WebUI for LLMs [github](https://github.com/open-webui/open-webui)
 
 ## 待解决问题
 
@@ -114,7 +109,8 @@
 
 * 向量数据库
   * Qdrant
+  * Chroma
 * FastAPI
 * ffmpeg
-* SRS
+* SRS:SRS is a simple, high-efficiency, real-time video server supporting RTMP, WebRTC, HLS, HTTP-FLV, SRT, MPEG-DASH, and GB28181.[github](https://github.com/ossrs/srs)
 * NAS: 实现多服务器文件共享，可以使用云厂商NAS服务或自己搭建NFS Server[阿里云搭建NAS笔记](./nas.md)
