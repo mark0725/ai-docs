@@ -8,7 +8,7 @@
 
 * GPU服务器: 阿里云V100GPU服务器环境安装，[Ubuntu 22.04.1 LTS上安装cuda环境](./cuda.md)
 
-* docker环境: 安装GPU Docker容器环境[Installing the NVIDIA Container Toolkit](./cuda.md)
+* docker环境: 安装GPU Docker容器环境[NVIDIA Docker工具包安装官方文档](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)|[验证环境官方文档](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/docker-specialized.html)|[安装笔记](./cuda.md)
 
 * 构建三个基础容器镜像：
   1. [cuda](): 安装和验证cuda docker运行环境
