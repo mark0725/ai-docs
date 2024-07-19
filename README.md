@@ -24,10 +24,11 @@
 
 ## 基础
 
-* numpy:
 * python:
-* jupyterlab:JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. [官网](https://jupyter.org/)
-* opencv2
+* conda:
+* numpy:
+* jupyterlab: JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. [官网](https://jupyter.org/)
+* opencv2:
 
 ## 模型
 
@@ -41,7 +42,7 @@
   * echomimic: [github](https://github.com/BadToBest/EchoMimic)|[笔记]()
 
 * audio
-  * funasr: 阿里的`FunASR`的语音识别效果也是相当不错，而且时间也是比whisper更快的
+  * funasr: 阿里的`FunASR`的语音识别效果也是相当不错，而且时间也是比whisper更快的.[github](https://github.com/modelscope/FunASR)
   * Whisper: Whisper is a general-purpose speech recognition model. [github](https://github.com/openai/whisper)
   * Coqui XTTS: Coqui XTTS是一个领先的深度学习文本到语音任务（TTS语音生成模型）工具包，通过使用一段5秒钟以上的语音频剪辑就可以完成声音克隆*将语音克隆到不同的语言*。 [github](https://github.com/coqui-ai/TTS)|[huggingface](https://huggingface.co/spaces/coqui/xtts)
 
@@ -60,10 +61,10 @@
 
 ## 框架
 
-* pytorch
+* pytorch: Tensors and Dynamic neural networks in Python with strong GPU acceleration. [官网](https://pytorch.org/)|[github](https://github.com/pytorch/pytorch)
 
-* jax
-* tensorflow
+* jax: Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more[官网](http://jax.readthedocs.io/)|[github](https://github.com/google/jax)
+* tensorflow: [官网]()
 
 ## 训练
 
