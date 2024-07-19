@@ -1,20 +1,5 @@
 # AI学习笔记
 
-## 基础
-
-* numpy:
-* python:
-* jupyterlab:JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. [官网](https://jupyter.org/)
-* opencv2
-
-## 算力
-
-* Aliyun
-* Huaweicloud： [Modelarts](https://console.huaweicloud.com/modelarts/?region=cn-north-4#/dashboard)提供免费GPU学习环境，但是gpu比较老，适合简单基础学习。长时间运行模型最好购买GPU服务器。
-* AWS
-* Azure
-* PC
-
 ## 环境
 
 由于需要在多个按量计费的云环境中动态使用GPU服务器（不用的时候停止，以节省费用），希望能构建一个可以在多个AI服务器上快速切换的conda环境，多个服务器共享conda环境和用户工作内容，可以任意启动多个实例，docker容器停止后用户或应用工作成果不丢失，切换到其他主机后可以继续工作。
@@ -30,6 +15,21 @@
 3. [jupyterlab](): 基于conda环境构建一个公共的jupyterlab, ai 试验环境。
 
 > 后续所有试验内容基于本环境进行
+
+## 算力
+
+* Aliyun
+* Huaweicloud： [Modelarts](https://console.huaweicloud.com/modelarts/?region=cn-north-4#/dashboard)提供免费GPU学习环境，但是gpu比较老，适合简单基础学习。长时间运行模型最好购买GPU服务器。
+* AWS
+* Azure
+* PC
+
+## 基础
+
+* numpy:
+* python:
+* jupyterlab:JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. [官网](https://jupyter.org/)
+* opencv2
 
 ## 模型
 
@@ -106,12 +106,9 @@
 * WebUI
   * gradio: Gradio是一个Python库,提供了一种简单的方式将机器学习模型作为交互式Web应用程序来部署。
 
-
 ## 待解决问题
 
 * [ ] 模型任务调度平台, 模型或算力是稀有资源，如何在多个应用及用户合理分配资源，同时保证用户体验。
-
-
 
 ## 其他
 
