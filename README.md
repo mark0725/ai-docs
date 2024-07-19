@@ -61,6 +61,10 @@
 
 * transformer
 * cnn
+* rnn
+* lstm
+* gan
+* seq2seq
 * vae
 * unet
 
@@ -110,7 +114,7 @@
 
 * 数据标注
   * jTessBoxEditor:  [jTessBoxEditor](https://vietocr.sourceforge.net/training.html)is a box editor and trainer for [Tesseract OCR](https://github.com/tesseract-ocr)
-  * labelme: 
+  * labelme: [github](https://github.com/labelmeai/labelme)
   * AnyLabeling: 是一款自动标注工具
   * 精灵标注: 图片标注[官网](http://www.jinglingbiaozhu.com/)
   * CVAT:  is an interactive video and image annotation tool for computer vision.[官网](https://app.cvat.ai/)
