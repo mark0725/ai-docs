@@ -30,7 +30,7 @@
 * 算力互联: 价格便宜，卡多[官网](https://www.casdao.com/)
 * 智星云: 价格便宜[官网](https://www.ai-galaxy.cn/home)
 * ucloud:  [官网](https://www.ucloud.cn/site/active/new/gpu.html)
-* colab：google
+* colab：google，提供部分免费学习算力。
 * PC: windows,mac,linux
 
 ## 基础
@@ -106,7 +106,27 @@
 
 ### 数据集
 
-* PASCAL VOC: Visual Object Classes [官网](http://host.robots.ox.ac.uk/pascal/VOC/)
+* 图像分类
+  - **MNIST**: 包含70,000张手写数字图像（60,000张训练集和10,000张测试集）。每张图片是28x28的灰度图像，标签为0-9的数字。
+  - **CIFAR-10/100**: CIFAR-10包含60,000张32x32的彩色图像，分为10类；CIFAR-100有100个类别，每类600张图片。
+  - **ImageNet**: 一个大型图像数据库，拥有超过1400万张图像，包含2万多个类。常用于大型图像分类任务和预训练模型的转移学习。
+* 目标检测
+  - **PASCAL VOC**: 提供图像和物体识别标记（bounding boxes），涵盖20类物体。常用于目标检测和分割任务。 [官网](http://host.robots.ox.ac.uk/pascal/VOC/)
+  - **COCO (Common Objects in Context)**: 包含320,000张图像和超过200万个标注（annotations），涵盖80个类别。丰富的实例分割和对象检测标注使其成为许多检测任务的标准数据集。
+* 语义/实例分割
+  - **Cityscapes**: 包含来自50个不同城市的驾驶场景图像，专注于语义分割任务，特别是自动驾驶的应用。
+  - **ADE20K**: 包含20,000张用于训练和2,000张用于验证的图像，覆盖150个语义类别，用于场景解析。
+* 文本处理
+  - **IMDB**: 包含50,000条电影评论用于情感分析任务，分为正面和负面两类。
+  - **20 Newsgroups**: 包含约20,000篇新闻文章，分为20个新闻组，用于文本分类。
+  - **SQuAD (Stanford Question Answering Dataset)**: 包含超过100,000个问答对，主要用于阅读理解和问答系统。
+* 语音识别
+  - **LibriSpeech**: 一个大规模的语音数据集，包含约1000小时的英语读书音频，主要用于语音识别任务。
+  - **TIMIT**: 提供时间标注的话语和标注，为不同的语音识别任务提供参考。
+* 时间序列预测
+  - **UCI Machine Learning Repository**: 提供各种各样的时间序列数据集，如空气质量、股票价格等。
+* 推荐系统
+  - **MovieLens**: 包含数百万条电影评分数据，可以用于推荐系统任务。
 
 ## 运行部署
 
