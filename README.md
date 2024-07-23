@@ -45,7 +45,8 @@
 ### 开源模型
 
 * llm(NLP)
-  * qwen2: [github](https://github.com/QwenLM/Qwen2)
+  * Linly-AI: [github](https://github.com/CVI-SZU/Linly)
+  * qwen: [github](https://github.com/QwenLM/Qwen2)
   * GLM-4: [github](https://github.com/THUDM/GLM-4)
   * llama3: [github](https://github.com/meta-llama/llama3)
   * code-llama:  [github](https://github.com/meta-llama/codellama)|[提示词](https://www.promptingguide.ai/models/code-llama)
@@ -54,21 +55,20 @@
   * echomimic: [github](https://github.com/BadToBest/EchoMimic)|[官网](https://badtobest.github.io/echomimic.html)|[笔记]()
   * SadTalker: [github](https://sadtalker.github.io)
   * Wav2Lip: [github](https://github.com/Rudrabha/Wav2Lip)
-  * ER-NeRF: [github](https://github.com/Fictionarry/ER-NeRF)
+  * ER-NeRF: 是使用最新的NeRF技术构建的数字人，拥有定制数字人的特性，只需要一个人的五分钟左右到视频即可重建出来.[github](https://github.com/Fictionarry/ER-NeRF)
 * 多模态
   * Stable Diffusion
 
   * Kolors: 快手可图,文生图大模型.[github](https://github.com/Kwai-Kolors/Kolors)|[modelscope](https://www.modelscope.cn/models/Kwai-Kolors/Kolors)
-  
 * video
   * 
-
 * audio
   * funasr: 阿里的`FunASR`的语音识别效果也是相当不错，而且时间也是比whisper更快的.[github](https://github.com/modelscope/FunASR)
   * Whisper: Whisper is a general-purpose speech recognition model. [github](https://github.com/openai/whisper)
   * GPT-SoVITS: 低成本AI音色克隆软件。目前只有TTS（文字转语音）功能，将来会更新变声功能[github](https://github.com/RVC-Boss/GPT-SoVITS)|[文档](https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e)
   * Coqui XTTS: Coqui XTTS是一个领先的深度学习文本到语音任务（TTS语音生成模型）工具包，通过使用一段5秒钟以上的语音频剪辑就可以完成声音克隆*将语音克隆到不同的语言*。 [github](https://github.com/coqui-ai/TTS)|[huggingface](https://huggingface.co/spaces/coqui/xtts)
-  * CosyVoice-300M: [modelscope](https://www.modelscope.cn/models/speech_tts/CosyVoice-300M/summary)
+  * SenseVoice:  体验有情感识别、声音事件检测、语音识别等功能的音频理解模型. [github](https://github.com/FunAudioLLM/SenseVoice)|[modelscope](https://www.modelscope.cn/studios/iic/SenseVoice)
+  * CosyVoice: TTS [github](https://github.com/FunAudioLLM/CosyVoice)|[modelscope](https://www.modelscope.cn/models/speech_tts/CosyVoice-300M/summary)|[demo](https://fun-audio-llm.github.io/)
 * cv
   * SAM: [github](https://github.com/facebookresearch/segment-anything)
 * ocr
